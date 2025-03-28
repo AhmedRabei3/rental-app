@@ -1,0 +1,90 @@
+/* أساسيات التنسيق */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0066cc, #003366);
+  }
+  
+  .register-box {
+    background: white;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .register-box h2 {
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  .input-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #003366;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 10px;
+    background: #0066cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .register-btn:hover {
+    background: #004080;
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* تصميم متجاوب */
+  @media (max-width: 480px) {
+    .register-box {
+      padding: 20px;
+    }
+  
+    .input-group input {
+      font-size: 14px;
+    }
+  
+    .register-btn {
+      font-size: 14px;
+    }
+  }
+  

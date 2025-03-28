@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Kufi Arabic' , 'sans-serif';
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #efefef;
+  --primary-color: #004080;
+  --secondary-color: #34495e;
+  --light-red-color: #e74c3c;
+  --strong-red-color: #c0392b;
+  --success-color: #28a745;
+  --warning-color: #666;
+  --info-color: #2a7ddbb3;
+  --gray-color: #b4b2b2;
+  --white-color: #fff;
+}
+body{
+  background-color: var(--main-color);
+  direction: rtl;
+}
