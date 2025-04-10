@@ -1,0 +1,22 @@
+.not-found{
+    height: calc(
+        100vh
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-title{
+    font-size: 48px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.not-found-link{
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 24px;
+}

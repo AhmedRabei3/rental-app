@@ -3,7 +3,7 @@ import "./styles.css";
 import React from "react";
 
 function UserDashBoard() {
-  return <div>UserDashBoard</div>;
+  return <div></div>;
 }
 
 export default UserDashBoard;

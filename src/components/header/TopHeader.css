@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    transition: all 0.3s ease;
+    height: 55px;
+}
+
+/* Header - left*/
+.left-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    margin: 0 35px;
+    font-weight: 600;
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+
+/* header right */
+.right-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.header-right-link{
+    position: relative;
+    text-decoration: none;
+}
+
+.logo i{
+    font-size: 48px;
+    color: var(--warning-color);
+}
+
+.notification-count{
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    background-color: var(--light-red-color);
+    color: var(--white-color);
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+    min-width: 15px;
+    max-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-menu{
+font-size: 32px;
+display: none;
+}
+
+.header-auth{
+    background-color: var(--warning-color);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+}
+
+.header-auth:hover{
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+.header-auth-login{
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    gap: 10px;
+}
+
+.header-auth-login:hover{
+    background-color: var(--white-color);
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+.user-avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: flex;
+    font-size: 20px;
+    color: var(--secondary-color);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.avatar-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--light-color);
+}
+
+.avatar-container:hover{
+    background-color: var(--light-color);
+    transition: all 0.3s ease;
+}

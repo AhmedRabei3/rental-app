@@ -1,0 +1,43 @@
+.navbar-container {
+  padding: 20px;
+  background-color: var(--blue-color);
+  border-bottom: 1px solid var(--gray-color);
+  direction: rtl; /* لدعم اللغة العربية */
+  border: none;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.tab {
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.tab i{
+  margin: 10px;
+}
+
+
+.tab:hover,
+.tab.active {
+  color: var(--warning-color); /* أو استخدم magenta لو تحب */
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background-color: var(--warning-color); /* لون السطر المتحرك */
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}

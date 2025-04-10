@@ -1,22 +1,31 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+
+import { useSelector, useDispatch } from "react-redux";
+import { registerUser } from "../../redux/apiCalls/authApiCall";
 import "./styles.css";
 
 const RegisterPage = () => {
+  const dispatch = useDispatch();
+  const { registerMessage } = useSelector((state) => state.auth);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
-    confirmPassword: "",
   });
+  const [confirmPassword, setConfirm] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
+    if (confirmPassword !== formData.password) {
+      toast.error("Passwords do not match");
+    }
     e.preventDefault();
-    console.log("User Registered:", formData);
+    dispatch(registerUser(formData));
   };
 
   return (
@@ -65,8 +74,8 @@ const RegisterPage = () => {
               type="password"
               name="confirmPassword"
               placeholder="أعد إدخال كلمة المرور"
-              value={formData.confirmPassword}
-              onChange={handleChange}
+              value={confirmPassword}
+              onChange={(e) => setConfirm(e.target.value)}
               required
             />
           </div>

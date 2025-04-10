@@ -1,9 +1,11 @@
 import "./styles.css";
 
-import React from "react";
-
 function Profile() {
-  return <div>Profile</div>;
+  return (
+    <div className="profile-page-container">
+      <div className="profile-page-header"></div>
+    </div>
+  );
 }
 
 export default Profile;

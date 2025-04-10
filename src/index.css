@@ -4,19 +4,58 @@
   font-family: 'Noto Kufi Arabic' , 'sans-serif';
   box-sizing: border-box;
 }
+
 :root{
   --main-color: #efefef;
   --primary-color: #004080;
   --secondary-color: #34495e;
   --light-red-color: #e74c3c;
-  --strong-red-color: #c0392b;
+  --danger-color: #c0392b;
   --success-color: #28a745;
-  --warning-color: #666;
+  --dark-grean-color: #005817;
+  --warning-color: rgba(255, 221, 85, 0.882);
   --info-color: #2a7ddbb3;
   --gray-color: #b4b2b2;
   --white-color: #fff;
+  --magenta-color:#aa0467;
+  --light-color: #ffffffc8;
 }
+
+[theme='dark']{
+  --main-color: #2c3e50;
+  --primary-color: #ecf0f1;
+  --secondary-color: #bdc3c7;
+  --light-red-color: #e74c3c;
+  --danger-color: #c0392b;
+  --success-color: #28a745;
+  --warning-color: rgba(255, 221, 85, 0.882);
+  --info-color: #2a7ddbb3;
+  --gray-color: #b4b2b2;
+  --white-color: #fff;
+  --magenta-color: #aa0467;
+}
+
 body{
   background-color: var(--main-color);
-  direction: rtl;
 }
+html::-webkit-scrollbar{
+  width: 12px;
+}
+html::-webkit-scrollbar-track{
+  background: var(--main-color);
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb:hover{
+  background: var(--secondary-color);
+}
+html::-webkit-scrollbar-thumb:active{
+  background: var(--light-red-color);
+}
+.bi-trash-fill{
+  color: var(--light-red-color);
+}
+
+@import "leaflet/dist/leaflet.css";
